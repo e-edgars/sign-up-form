@@ -15,3 +15,52 @@
     font-style: normal;
     font-display: swap;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.left > img {
+    height: 100vh;
+    width: 35vw;
+    display: block;
+}
+
+.logo-text {
+    position: absolute;
+    top: 25vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: hsla(0, 0%, 0%, 0.5);
+    width: 35vw;
+    height: 15vh;
+}
+
+.logo-text img {
+    height: 125px;
+}
+
+.logo-text .text {
+    font-family: "Norse";
+    font-weight: bold;
+    font-size: 6rem;
+    color: white;
+}
+
+.credit {
+    position: absolute;
+    bottom: 10px;
+
+    width: 35vw;
+    text-align: center;
+    
+    color: white;
+}
+
+a {
+    color: white;
+}
