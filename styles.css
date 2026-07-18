@@ -23,6 +23,7 @@
 
 body {
     display: flex;
+    font-family: sans-serif;
 }
 
 .left > img {
@@ -40,6 +41,7 @@ body {
     align-items: center;
 
     background-color: hsla(0, 0%, 0%, 0.5);
+
     width: 35vw;
     height: 15vh;
 }
@@ -65,7 +67,7 @@ body {
     color: white;
 }
 
-a {
+.left a {
     color: white;
 }
 
@@ -77,12 +79,101 @@ a {
     padding-left: 5vw;
     padding-right: 15vw;
     padding-top: 15vh;
-    padding-bottom: 15vh; 
+    padding-bottom: 5vh; 
 
     font-size: 1.5rem;
-    font-weight: 500;
-    font-family: sans-serif;
 
     height: 20vh;
 }
 
+fieldset {
+    border: none;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 5vh 5vw;
+
+    box-shadow: 0px 1px 5px hsla(0, 0%, 40%, 0.3);
+
+    gap: 10px;
+}
+
+form .title {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.form-row {
+    display: flex;
+    gap: 80px;
+}
+
+.inputPair {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.inputPair label {
+    font-size: 0.8rem;
+}
+
+.inputPair input {
+    width: 250px;
+
+    padding: 5px 2px;
+
+    border-color: hwb(0 62% 6% / 0.149);
+    border-radius: 5px;
+}
+
+.inputPair input:focus,
+.inputPair input:active {
+    outline: none;
+
+    border: 2px solid rgb(58, 142, 207);
+    border-radius: 5px;
+
+    box-shadow: 2px 2px 5px hsla(0, 0%, 40%, 0.3);;
+}
+
+.inputPair input:user-invalid {
+    border: 2px solid rgb(179, 3, 3);
+}
+
+.right a {
+    text-decoration: none;
+    color: hsla(99, 100%, 14%, 0.737);
+}
+
+.right a:hover,
+.right a:focus {
+    color: hsla(99, 98%, 21%, 0.737);
+}
+
+button[type="submit"] {
+    font-size: 1rem;
+    font-weight: 700;
+
+    border: none;
+    border-radius: 10px;
+
+    color: white;
+    background-color: hsla(99, 100%, 14%, 0.737);
+
+    width: 15rem;
+
+    padding: 15px 10px;
+    margin: 40px 0px;
+}
+
+button[type="submit"]:hover,
+button[type="submit"]:focus {
+    background-color: hsla(99, 98%, 21%, 0.737);
+    cursor: pointer;
+}
+
+.right-bottom {
+    padding-left: 5vw;
+}
