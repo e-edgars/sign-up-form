@@ -23,18 +23,28 @@
 
 body {
     display: flex;
+
     font-family: sans-serif;
 }
 
-.left > img {
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
     height: 100vh;
     width: 35vw;
-    display: block;
+
+    background-image: url("img/plants.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .logo-text {
-    position: absolute;
-    top: 25vh;
+    flex: 0 0;
+
+    margin-top: 35%;
 
     display: flex;
     justify-content: center;
@@ -42,32 +52,31 @@ body {
 
     background-color: hsla(0, 0%, 0%, 0.5);
 
-    width: 35vw;
-    height: 15vh;
+    width: 100%;
+    height: 15%;
 }
 
 .logo-text img {
-    height: 125px;
+    height: 90%;
 }
 
 .logo-text .text {
     font-family: "Norse";
     font-weight: bold;
-    font-size: 6rem;
+    font-size: calc(2rem + 5vw);
     color: white;
 }
 
 .credit {
-    position: absolute;
-    bottom: 10px;
-
-    width: 35vw;
+    width: 100%;
     text-align: center;
     
     color: white;
+
+    margin-bottom: 5%
 }
 
-.left a {
+header a {
     color: white;
 }
 
@@ -76,14 +85,14 @@ body {
     flex-direction: column;
     justify-content: space-between;
 
-    padding-left: 5vw;
-    padding-right: 15vw;
-    padding-top: 15vh;
-    padding-bottom: 5vh; 
+    padding-left: 10%;
+    padding-right: 20%;
+    padding-top: 10%;
+    padding-bottom: 5%; 
 
     font-size: 1.5rem;
 
-    height: 20vh;
+    height: 20%;
 }
 
 fieldset {
@@ -92,7 +101,7 @@ fieldset {
     display: flex;
     flex-direction: column;
 
-    padding: 5vh 5vw;
+    padding: 5% 10%;
 
     box-shadow: 0px 1px 5px hsla(0, 0%, 40%, 0.3);
 
@@ -106,6 +115,7 @@ form .title {
 
 .form-row {
     display: flex;
+    flex-wrap: wrap;
     gap: 80px;
 }
 
@@ -120,7 +130,7 @@ form .title {
 }
 
 .inputPair input {
-    width: 250px;
+    width: 20rem;
 
     padding: 5px 2px;
 
@@ -175,5 +185,5 @@ button[type="submit"]:focus {
 }
 
 .right-bottom {
-    padding-left: 5vw;
+    padding-left: 10%;
 }
